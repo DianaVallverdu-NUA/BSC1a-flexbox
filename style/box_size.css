@@ -1,4 +1,4 @@
-
+/* padding */
 .p_5px {
   padding: 5px;
 }
@@ -15,22 +15,6 @@
   padding-right: 5px;
 }
 
-.m_5px {
-  margin: 5px;
-}
-.mt_5px {
-  margin-top: 5px;
-}
-.mb_5px {
-  margin-bottom: 5px;
-}
-.ml_5px {
-  margin-left: 5px;
-}
-.mr_5px {
-  margin-right: 5px;
-}
-
 .p_10px {
   padding: 10px;
 }
@@ -45,6 +29,23 @@
 }
 .pr_10px {
   padding-right: 10px;
+}
+
+/* margin */
+.m_5px {
+  margin: 5px;
+}
+.mt_5px {
+  margin-top: 5px;
+}
+.mb_5px {
+  margin-bottom: 5px;
+}
+.ml_5px {
+  margin-left: 5px;
+}
+.mr_5px {
+  margin-right: 5px;
 }
 
 .m_10px {
