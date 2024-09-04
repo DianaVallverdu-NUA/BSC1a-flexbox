@@ -1,4 +1,45 @@
 /* css for specific elements */
+
 #img-header {
+  /* width & height*/
   width: 70%;
+  height: 400px;
+
+  /* object position */
+  object-fit: cover;
+  object-position: 100% 50%;
+
+  /* opacity */
+  opacity: 0.7;
+}
+
+/* tablet mode */
+@media (max-width: 900px) {
+  #img-header {
+    /* change object-position */
+    object-position: 70% 50%;
+  }
+}
+
+/* smartphone mode */
+@media (max-width: 500px) {
+  #img-header {
+    /* adapt width */
+    width: 90%;
+
+    /* object position */
+    object-fit: cover;
+    object-position: 60% 50%;
+
+    /* increase vertical margin */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* at 300 pixes or lower - no image */
+@media (max-width: 300px) {
+  #img-header {
+    display: none;
+  }
 }
