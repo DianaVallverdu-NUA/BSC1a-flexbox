@@ -3,14 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- base - shared with all pages -->
     <link href="./style/base.css" rel="stylesheet" />
+
+    <!-- box_size - margin, padding, borders -->
+    <link href="./style/box_size.css" rel="stylesheet" />
+
+    <!-- index specific css -->
     <link href="./style/index.css" rel="stylesheet" />
     <title>Image Gallery</title>
   </head>
   <body>
     <!-- header image -->
-    <div class="container width-100">
-      <img id="img-header" src="assets/tontipop_portada.jpg" />
+    <div class="container width-100 bg_yellow">
+      <img
+        id="img-header"
+        class="mt_5px mb_5px"
+        src="assets/tontipop_portada.jpg"
+      />
     </div>
 
     <!-- content - grid -->

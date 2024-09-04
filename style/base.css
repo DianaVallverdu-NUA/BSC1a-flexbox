@@ -13,5 +13,18 @@
 
 /* size css */
 .width_100 {
-  width: 100%
+  width: 100%;
+}
+
+/* colour css */
+.bg_marine_blue {
+  background-color: #036f8c;
+}
+
+.bg_bright_pink {
+  background-color: #ff0084;
+}
+
+.bg_yellow {
+  background-color: yellow;
 }
