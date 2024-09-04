@@ -4,6 +4,9 @@
   padding: 0;
 }
 
+img {
+  width: 100%;
+}
 
 /* layout css */
 .container {
@@ -17,6 +20,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.card {
+  /* flex display */
+  display: flex;
+  flex-direction: column;
+
+  /* width */
+  width: 15%;
+}
+
+.left_align {
+  justify-content: left;
+}
+
+.space_between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 /* size css */
@@ -39,4 +63,8 @@
 
 .bg_beige {
   background-color: beige;
+}
+
+.text_white {
+  color: white;
 }

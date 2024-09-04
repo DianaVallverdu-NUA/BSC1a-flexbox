@@ -1,6 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rosarivo:ital@0;1&display=swap");
+
 h1 {
   font-family: "Permanent Marker", cursive;
   font-size: 4rem;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Sevillana", cursive;
+  font-style: normal;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 100;
 }
 
 /* tablet size */
