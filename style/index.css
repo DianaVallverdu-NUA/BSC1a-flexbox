@@ -1,6 +1,6 @@
 /* css for specific elements */
 
-#img-header {
+#img_header {
   /* width & height*/
   width: 70%;
   height: 400px;
@@ -15,7 +15,7 @@
 
 /* tablet mode */
 @media (max-width: 900px) {
-  #img-header {
+  #img_header {
     /* change object-position */
     object-position: 70% 50%;
   }
@@ -23,7 +23,7 @@
 
 /* smartphone mode */
 @media (max-width: 500px) {
-  #img-header {
+  #img_header {
     /* adapt width */
     width: 90%;
 
@@ -39,7 +39,7 @@
 
 /* at 300 pixes or lower - no image */
 @media (max-width: 300px) {
-  #img-header {
+  #img_header {
     display: none;
   }
 }
