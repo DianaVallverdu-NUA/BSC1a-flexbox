@@ -29,12 +29,9 @@ a {
 }
 
 .card {
-  /* flex display */
-  display: flex;
-  flex-direction: column;
-
   /* width */
   width: 15%;
+  height: 320px
 }
 
 .left_align {
