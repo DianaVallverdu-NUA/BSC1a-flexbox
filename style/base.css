@@ -1,14 +1,17 @@
+/* remove margin & padding */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* layout css */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* size css */
 .width_100 {
   width: 100%
 }
