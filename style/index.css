@@ -1,5 +1,6 @@
 /* css for specific elements */
 
+/* ======================= IMG HEADER ======================= */
 #img_header {
   /* width & height*/
   width: 70%;
@@ -43,3 +44,5 @@
     display: none;
   }
 }
+
+/* ======================= TEXT HEADER ======================= */

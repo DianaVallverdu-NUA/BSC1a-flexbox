@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <!-- base - shared with all pages -->
     <link href="./style/base.css" rel="stylesheet" />
+
+    <!-- typography - fonts, text sizes etc.  -->
+    <link href="./style/typography.css" rel="stylesheet" />
 
     <!-- box_size - margin, padding, borders -->
     <link href="./style/box_size.css" rel="stylesheet" />
@@ -14,15 +20,23 @@
     <link href="./style/index.css" rel="stylesheet" />
     <title>Image Gallery</title>
   </head>
-  <body>
+  <body class="bg_beige">
     <!-- header image -->
-    <div class="container width-100 bg_yellow">
-      <img
-        id="img_header"
-        class="mt_5px mb_5px"
-        src="assets/tontipop_cover.png"
-        alt="Cover of music Album 'Un ano de mierda' (a shitty year) by tontipop group Carino. Three female presenting people sit on a wooden bench with light blue clothes. They look straight into camera with a serious face. They wear bright red lipstick and all have short dark hair."
-      />
+    <div class="container_vertical width_100">
+      <!-- title -->
+      <div class="container width_100 bg_bright_pink mb_10px">
+        <h1 id="text_header">Tontipop</h1>
+      </div>
+
+      <!-- image -->
+      <div class="container_vertical width_100 bg_yellow">
+        <img
+          id="img_header"
+          class="mt_5px mb_5px"
+          src="assets/tontipop_cover.png"
+          alt="Cover of music Album 'Un ano de mierda' (a shitty year) by tontipop group Carino. Three female presenting people sit on a wooden bench with light blue clothes. They look straight into camera with a serious face. They wear bright red lipstick and all have short dark hair."
+        />
+      </div>
     </div>
 
     <!-- content - grid -->
