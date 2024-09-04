@@ -44,3 +44,32 @@
     display: none;
   }
 }
+
+/* ======================= GRID ELEMENTS ======================= */
+.card {
+  /* width */
+  width: 15%;
+  height: 320px
+}
+
+/* tablet mode */
+@media (max-width: 900px) {
+  .card {
+    width: unset;
+    min-width: 23%;
+    max-width: 45%;
+  }
+}
+
+/* smartphone mode */
+@media (max-width: 450px) {
+  .card {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+.card img {
+  max-height: 300px;
+}

@@ -28,9 +28,12 @@ p {
   font-weight: 100;
 }
 
-/* tablet size */
+/* tablet size and smaller */
 @media (max-width: 1000px) {
   h1 {
     font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
   }
 }
