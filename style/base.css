@@ -40,34 +40,6 @@ a {
   flex-wrap: wrap;
 }
 
-.grid_container {
-  display: grid;
-  grid-template-areas:
-    "header_text header_text header_text header_text header_text header_text"
-    "header_img header_img header_img header_img header_img header_img"
-    "left1 left1 mid1 mid1 right1 right1";
-}
-
-.header_text {
-  grid-area: header_text;
-}
-
-.header_img {
-  grid-area: header_img;
-}
-
-.left1 {
-  grid-area: left1;
-}
-
-.mid1 {
-  grid-area: mid1;
-}
-
-.right1 {
-  grid-area: right1;
-}
-
 /* size css */
 .width_100 {
   width: 100%;

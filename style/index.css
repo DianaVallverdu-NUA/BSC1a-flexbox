@@ -48,28 +48,57 @@
 /* ======================= GRID ELEMENTS ======================= */
 .card {
   /* width */
-  width: 15%;
   height: 320px
 }
 
 /* tablet mode */
 @media (max-width: 900px) {
-  .card {
-    width: unset;
-    min-width: 23%;
-    max-width: 45%;
-  }
 }
 
 /* smartphone mode */
 @media (max-width: 450px) {
-  .card {
-    min-width: unset;
-    max-width: unset;
-    width: 100%;
-  }
 }
 
 .card img {
   max-height: 300px;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-areas:
+    "header_text header_text header_text header_text header_text header_text"
+    "header_img header_img header_img header_img header_img header_img"
+    "item1 item2 item3 item4 item5 item6";
+}
+
+.header_text {
+  grid-area: header_text;
+}
+
+.header_img {
+  grid-area: header_img;
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.item6 {
+  grid-area: item6;
 }
