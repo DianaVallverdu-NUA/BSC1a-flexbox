@@ -48,15 +48,7 @@
 /* ======================= GRID ELEMENTS ======================= */
 .card {
   /* width */
-  height: 320px
-}
-
-/* tablet mode */
-@media (max-width: 900px) {
-}
-
-/* smartphone mode */
-@media (max-width: 450px) {
+  height: 320px;
 }
 
 .card img {
@@ -101,4 +93,31 @@
 
 .item6 {
   grid-area: item6;
+}
+
+/* tablet mode */
+@media (max-width: 1000px) {
+  .grid_container {
+    grid-template-areas:
+      "header_text header_text header_text"
+      "header_img header_img header_img"
+      "item1 item2 item3 "
+      "item4 item5 item6 ";
+  }
+}
+
+/* smartphone mode */
+@media (max-width: 450px) {
+  .grid_container {
+    grid-template-areas:
+      "header_text"
+      "header_img"
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7";
+  }
 }
