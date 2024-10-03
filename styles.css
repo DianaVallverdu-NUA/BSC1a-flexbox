@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
 /* styles for all website */
 * {
     padding: 0;
     margin: 0;
 }
 
+/* heading and title styles */
 h1 {
+    /* h1 font family */
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-size: calc(2rem + 2vw + 2vh);
+
     /* padding and margin */
     padding: 5px;
     padding-left: 100px;
@@ -14,20 +21,31 @@ h1 {
     border-style: solid;
     border-width: 0.5vw;
     border-radius: 5px;
+
+    
 }
 
-#title {
-    /* width - full screen */
-    width: 100vw;
-
-    /* center content vertically and horizontally */
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.full-width {
+    width: 100vw;
+}
+
+#title-div {
     /* styles */
     color: rgb(255, 0, 234);
     background-color: rgb(255, 255, 0);
 
     height: 100px;
+}
+
+#cover-img {
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
 }
