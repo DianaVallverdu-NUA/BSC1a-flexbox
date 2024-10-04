@@ -1,137 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
 
 /* styles for all website */
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* heading and title styles */
 h1 {
-    /* h1 font family */
-    font-family: "Sixtyfour Convergence", sans-serif;
-    font-size: calc(2rem + 2vw + 2vh);
+  /* h1 font family */
+  font-family: "Sixtyfour Convergence", sans-serif;
+  font-size: calc(2rem + 2vw + 2vh);
 
-    /* padding and margin */
-    padding: 5px;
-    padding-left: 20%;
-    padding-right: 20%;
+  /* padding and margin */
+  padding: 5px;
+  padding-left: 20%;
+  padding-right: 20%;
 
-    /* border style */
-    border-style: solid;
-    border-width: 0.5vw;
-    border-radius: 5px;
+  /* border style */
+  border-style: solid;
+  border-width: 0.5vw;
+  border-radius: 5px;
 }
 
+/* media query for the heading - below 870 pixles, keep title at one size and remove border */
 @media (max-width: 870px) {
-    h1 {
-        font-size: calc(1rem);
-        border: none;
-        padding: 0;
-    }
+  h1 {
+    font-size: calc(1rem);
+    border: none;
+    padding: 0;
+  }
 }
 
-
-
+/* elements with class flex-center will display content using the flex property and centered */
 .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* elements with class flex col will change the flex direction to a column. An element needs to have display: flex for this to work. */
 .flex-col {
-    flex-direction: column;
+  flex-direction: column;
 }
 
+/* elements with class ful-width will occupy 100 % of the viewport width  */
 .full-width {
-    width: 100vw;
+  width: 100vw;
 }
 
+/* the class card is used as the container for each image and paragraph in the callery */
 .card {
-    max-width: 300px;
+  max-width: 300px;
 }
 
+/* style for images inside a card */
 .card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+  /* size */
+  width: 100%;
+  height: 300px;
+
+  /* set object-fit to cover - image gets automatically crop to cover all the space it can */
+  object-fit: cover;
 }
 
+/* specific style for the title div */
 #title-div {
-    /* styles */
-    color: rgb(255, 0, 234);
-    background-color: rgb(255, 255, 0);
+  /* coloring */
+  color: rgb(255, 0, 234);
+  background-color: rgb(255, 255, 0);
 
-    height: 100px;
+  /* size */
+  height: 100px;
 }
 
 /* cover image style */
 #cover-img {
-    width: 70%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center top;
+  /* size */
+  width: 70%;
+  height: 300px;
+
+  /* object fit and position to make sure the cropping affects feet but not heads */
+  object-fit: cover;
+  object-position: center top;
 }
 
+/* media queries for the cover image - height will get smaller as screen gets smaller */
 @media (max-width: 900px) {
-    #cover-img {
-        height: 200px;
-    }
+  #cover-img {
+    height: 200px;
+  }
 }
 
 @media (max-width: 500px) {
-    #cover-img {
-        width: 100%;
-    }
+  #cover-img {
+    width: 100%;
+  }
 }
 
+/* below 400 pixels - hide image */
 @media (max-width: 400px) {
-    #cover-img {
-        display: none;
-    }
+  #cover-img {
+    display: none;
+  }
 }
 
 /* gallery styles */
-
 #gallery-div {
-    display: grid;
-    justify-content: center;
-    grid-template-areas:
-        "item1 item2 item3 item4";
+  /* default: display in a row */
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "item1 item2 item3 item4";
 }
 
+/* 400 pixels to 800 pixels - display in two columns */
 @media (max-width: 800px) {
-    #gallery-div {
-        grid-template-areas:
-            "item1 item2"
-            "item3 item4";
-    }
+  #gallery-div {
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4";
+  }
 }
 
+/* below 400 pixels - display in one column */
 @media (max-width: 400px) {
-    #gallery-div {
-        grid-template-areas:
-            "item1"
-            "item2"
-            "item3"
-            "item4"
-    }
+  #gallery-div {
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4";
+  }
 }
 
-/* gallery items */
-
+/* link gallery items to grid-area */
 #item1 {
-    grid-area: item1;
+  grid-area: item1;
 }
 
 #item2 {
-    grid-area: item2;
+  grid-area: item2;
 }
 
 #item3 {
-    grid-area: item3;
+  grid-area: item3;
 }
 
 #item4 {
-    grid-area: item4;
+  grid-area: item4;
 }
